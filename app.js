@@ -77,7 +77,7 @@ productRadioTags.forEach(radioTag => {
         if (event.target) {
             trackUserPicks(event.target.value);
 
-            // console.log(userPicksArray);
+      // console.log(userPicksArray);
         }
     });
 });

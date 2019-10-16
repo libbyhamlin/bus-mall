@@ -12,7 +12,8 @@
     "es6": true
   },
   "globals": {
-    "QUnit": false
+    "QUnit": false,
+    "Chart": false
   },
   "rules": {
     "eqeqeq": ["error", "always"],
@@ -26,11 +27,11 @@
       }
     ],
     "quotes": [
-      "error", 
+      "error",
       "single",
-      { 
+      {
         "avoidEscape": true,
-        "allowTemplateLiterals": true 
+        "allowTemplateLiterals": true
       }
     ],
     "no-multi-spaces": [
