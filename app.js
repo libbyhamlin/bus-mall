@@ -8,13 +8,10 @@ const products = new ProductArray(productData);
 
 // console.log(products.getRandomProduct());
 
-productRadioTags.forEach(radioTag => {
-    radioTag.addEventListener('click', event => {
-        if (event.target) {
-            const productsClicked = event.target.value;
-        }
-    });
-});
+const userPicksArray = [];
+let randomProduct;
+let randomProduct2;
+let randomProduct3;
 
 //Dynamically render HTML
 const generateProduct = () => {
@@ -63,7 +60,8 @@ function trackUserPicks(productId) {
     if (!found) {
         found = {
             id: productId,
-            timesClicked: 1
+            timesClicked: 1,
+            timesDisplayed: 1
         };
         userPicksArray.push(found);
     } else {
@@ -77,7 +75,9 @@ productRadioTags.forEach(radioTag => {
         if (event.target) {
             trackUserPicks(event.target.value);
 
-      // console.log(userPicksArray);
+            console.log(userPicksArray);
         }
     });
 });
+
+export { userPicksArray };
