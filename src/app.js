@@ -1,6 +1,6 @@
 import { productData } from './api.js';
 import { ProductArray } from './ProductArray.js';
-import { compare } from './'
+import { findById } from './utils.js'
 
 const productImageTags = document.querySelectorAll('img');
 const productRadioTags = document.querySelectorAll('input');
@@ -76,7 +76,7 @@ productRadioTags.forEach(radioTag => {
         if (event.target) {
             trackUserPicks(event.target.value);
 
-            console.log(userPicksArray);
+            
         }
     });
 });
