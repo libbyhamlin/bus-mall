@@ -1,6 +1,6 @@
 const ctx = document.getElementById('chart').getContext('2d');
-import { userPicksArray } from './app.js';
-import { ProductArray } from './ProductArray.js';
+import { userPicksArray } from './src/app.js';
+import { ProductArray } from './src/product-array.js';
 
 function convertArray(array) {
     const returnArray = [];
@@ -20,13 +20,8 @@ document.getElementById('clicker').addEventListener('click', () => {
         data: {
             labels: labelColors,
             datasets: [
-                // {
-                //     label: '# of votes',
-                //     data: convertArray(userPicksArray),
-                //     backgroundColor: labelColors
-                // },
                 {
-                    label: '# of votes',
+                    label: '# of Votes',
                     data: convertArray(userPicksArray),
                     backgroundColor: labelColors
                 }
