@@ -1,5 +1,6 @@
-import { productData } from './api.js';
-import { ProductArray } from './ProductArray.js';
+import { productData } from '../src/api.js';
+import { ProductArray } from '../src/product-array.js';
+import { findById } from '../src/utils.js';
 
 const productImageTags = document.querySelectorAll('img');
 const productRadioTags = document.querySelectorAll('input');
@@ -9,9 +10,9 @@ const products = new ProductArray(productData);
 // console.log(products.getRandomProduct());
 
 const userPicksArray = [];
-let randomProduct;
-let randomProduct2;
-let randomProduct3;
+// let randomProduct;
+// let randomProduct2;
+// let randomProduct3;
 
 //Dynamically render HTML
 const generateProduct = () => {
@@ -74,8 +75,6 @@ productRadioTags.forEach(radioTag => {
     radioTag.addEventListener('input', event => {
         if (event.target) {
             trackUserPicks(event.target.value);
-
-            console.log(userPicksArray);
         }
     });
 });

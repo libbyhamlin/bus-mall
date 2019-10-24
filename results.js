@@ -1,39 +1,42 @@
 const ctx = document.getElementById('chart').getContext('2d');
-import { userPicksArray } from './app.js';
-import { productData } from './ProductArray.js'
+import { userPicksArray } from './src/app.js';
+import { ProductArray } from './src/product-array.js';
 
-conts data = [{ id: 'usb',
-    timesClicked: 1,
-    // timesDisplayed: 2}];
+function convertArray(array) {
+    const returnArray = [];
+    array.forEach(element => {
+        returnArray.push(element.timesClicked);
+    });
 
-onlyTImesClicked = array.forEach(data => {
-    
-})
+    return returnArray;
+}
 
-const data = [12, 19, 3, 5, 2, 3];
+const data = convertArray(userPicksArray);
 const labelColors = ['red', 'blue', 'yellow', 'green', 'purple', 'orange'];
 
-const myChart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: labelColors,
-        datasets: [
-            {
-                label: '# of Votes',
-                data: data,
-                backgroundColor: labelColors
-            }
-        ]
-    },
-    options: {
-        scales: {
-            yAxes: [
+document.getElementById('clicker').addEventListener('click', () => {
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: labelColors,
+            datasets: [
                 {
-                    ticks: {
-                        beginAtZero: true
-                    }
+                    label: '# of Votes',
+                    data: convertArray(userPicksArray),
+                    backgroundColor: labelColors
                 }
             ]
+        },
+        options: {
+            scales: {
+                yAxes: [
+                    {
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }
+                ]
+            }
         }
-    }
+    });
 });

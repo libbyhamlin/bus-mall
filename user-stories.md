@@ -1,7 +1,10 @@
-As a reminder, user stories typically take the form of, "As X, I want Y, so that Z".
+#Purpose
+The purpose of the buss-mall app is to collect shopping data of its users and visually display the resulting data.
 
-As someone who rides the bus I want to have an app where I can shop so that I can
+## User Stories/Participants
 
-As someone who loves to shop and rides the bus I want to have a bus-mall app where I can shop.
+###Toni
+Toni is a collect of quirky items that he uses to build art installations, but Toni hates shopping in stores and doesn't have a car. As a user of public transportation and as a fan of online shopping and quirky objects, Toni wants an app where he could shop while he commutes so that he doesn't have to go into a store and so that he could find quirky items.
 
-As someone who likes bus-mall products I want to
+###Karen
+Karen commutes everyday to and from work and has a busy work schedule. She has a large family and takes pride in gifting items that are not found in any stores in their town. Bus-mall allows her to shop for rare gifts while she commutes.
