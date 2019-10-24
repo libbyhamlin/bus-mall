@@ -1,11 +1,29 @@
 body {
-  background-color: #dbddc0;
+  background-color: rgb(19, 139, 231);
 }
 
 h1 {
   display: flex;
   justify-content: center;
   font-family: "Codystar", cursive;
+  color: white;
+  font-size: 3em;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+  font-family: "Codystar", cursive;
+  color: white;
+  font-size: 3em;
+}
+
+div.h2 {
+  display: flex;
+  justify-content: center;
+  font-family: "Codystar", cursive;
+  color: white;
+  font-size: 3em;
+  margin: -10px;
 }
 
 .pick-a-pic {
@@ -17,7 +35,7 @@ h1 {
   width: 850px;
   height: 350px;
   margin: auto;
-  margin-top: 10%;
+  margin-top: 0px;
   padding: 30px;
   background-color: pink;
   border-radius: 2em;
@@ -31,7 +49,7 @@ input:checked + .radio-image {
   border: 10px solid lightblue;
 }
 input:checked + .radio-image {
-  border: 10px solid blue;
+  border: 10px solid rgb(19, 139, 231);
 }
 
 input {
@@ -42,7 +60,7 @@ label img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 75%;
 }
 
 #submit-container {
@@ -50,11 +68,27 @@ label img {
   justify-content: center;
 }
 
-#clicker {
+div.btn {
   display: flex;
   justify-content: center;
+  margin-top: 36px;
 }
 
+button#clicker {
+  font-size: 24px;
+  font-weight: 300;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgb(19, 139, 231);
+  color: white;
+}
+
+button#clicker:hover {
+  background-color: pink;
+  color: rgb(19, 139, 231);
+}
 canvas {
   width: 75%;
   height: 500px;
