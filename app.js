@@ -1,5 +1,6 @@
 import { productData } from './api.js';
 import { ProductArray } from './ProductArray.js';
+import { compare } from './'
 
 const productImageTags = document.querySelectorAll('img');
 const productRadioTags = document.querySelectorAll('input');

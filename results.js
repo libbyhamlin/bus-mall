@@ -20,6 +20,11 @@ document.getElementById('clicker').addEventListener('click', () => {
         data: {
             labels: labelColors,
             datasets: [
+                // {
+                //     label: '# of votes',
+                //     data: convertArray(userPicksArray),
+                //     backgroundColor: labelColors
+                // },
                 {
                     label: '# of votes',
                     data: convertArray(userPicksArray),
