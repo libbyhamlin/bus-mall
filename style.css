@@ -1,0 +1,95 @@
+body {
+  background-color: rgb(19, 139, 231);
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Codystar", cursive;
+  color: white;
+  font-size: 3em;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+  font-family: "Codystar", cursive;
+  color: white;
+  font-size: 3em;
+}
+
+div.h2 {
+  display: flex;
+  justify-content: center;
+  font-family: "Codystar", cursive;
+  color: white;
+  font-size: 3em;
+  margin: -10px;
+}
+
+.pick-a-pic {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  vertical-align: middle;
+  width: 850px;
+  height: 350px;
+  margin: auto;
+  margin-top: 0px;
+  padding: 30px;
+  background-color: pink;
+  border-radius: 2em;
+}
+.radio-image {
+  border: 10px solid transparent;
+  align-content: center;
+  border-radius: 2em;
+}
+input:checked + .radio-image {
+  border: 10px solid lightblue;
+}
+input:checked + .radio-image {
+  border: 10px solid rgb(19, 139, 231);
+}
+
+input {
+  display: none;
+}
+
+label img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+#submit-container {
+  display: flex;
+  justify-content: center;
+}
+
+div.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
+}
+
+button#clicker {
+  font-size: 24px;
+  font-weight: 300;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgb(19, 139, 231);
+  color: white;
+}
+
+button#clicker:hover {
+  background-color: pink;
+  color: rgb(19, 139, 231);
+}
+canvas {
+  width: 75%;
+  height: 500px;
+}
